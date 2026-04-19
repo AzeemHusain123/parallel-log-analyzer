@@ -1,0 +1,77 @@
+2025-01-01 10:00:00 INFO Server started successfully
+2025-01-01 10:00:01 DEBUG Loading configuration from /etc/app/config.yml
+2025-01-01 10:00:02 INFO Database connection established to db01
+2025-01-01 10:00:05 WARNING High memory usage detected: 78%
+2025-01-01 10:00:10 ERROR Failed to load module: analytics_engine
+2025-01-01 10:00:12 INFO User login request received: user=john
+2025-01-01 10:00:12 SUCCESS User authenticated successfully: john
+2025-01-01 10:00:14 DEBUG Session token generated for john
+2025-01-01 10:00:20 INFO Processing API request: /api/v1/data
+2025-01-01 10:00:22 ERROR Database timeout occurred while fetching data
+2025-01-01 10:00:25 CRITICAL System resource exhaustion detected, CPU=99%
+2025-01-01 10:00:30 INFO CPU usage normalized to 34%
+2025-01-01 10:00:35 WARNING Repeated failed login attempts detected
+2025-01-01 10:00:37 FAIL Login failed for user: admin
+2025-01-01 10:00:40 INFO Performing scheduled backup
+2025-01-01 10:00:41 DEBUG Backup archive created: backup_2025_01_01.tar.gz
+2025-01-01 10:00:50 INFO Backup operation completed
+2025-01-01 10:01:00 INFO New API request: GET /api/v1/users
+2025-01-01 10:01:02 DEBUG Validating JWT token
+2025-01-01 10:01:03 ERROR Invalid token signature
+2025-01-01 10:01:05 WARNING Unauthorized API access attempt detected
+2025-01-01 10:01:08 INFO Request blocked due to invalid token
+2025-01-01 10:01:10 DEBUG Cache miss for key=user_1024
+2025-01-01 10:01:12 INFO Cache updated for key=user_1024
+2025-01-01 10:01:20 INFO Starting data synchronization job
+2025-01-01 10:01:22 DEBUG Syncing table: orders
+2025-01-01 10:01:25 DEBUG Syncing table: users
+2025-01-01 10:01:30 SUCCESS Data synchronization complete
+2025-01-01 10:01:35 INFO Network check initiated
+2025-01-01 10:01:37 WARNING Slow network response detected on interface eth0
+2025-01-01 10:01:40 ERROR Failed to reach external service: api.payment.com
+2025-01-01 10:01:45 INFO Retrying connection to api.payment.com
+2025-01-01 10:01:48 INFO Connection restored
+2025-01-01 10:02:00 INFO Running health check...
+2025-01-01 10:02:02 SUCCESS All services operational
+2025-01-01 10:02:05 DEBUG Cron job executed: cleanup_temp_files
+2025-01-01 10:02:08 INFO Cleanup completed successfully
+2025-01-01 10:02:15 WARNING Disk usage high: 89%
+2025-01-01 10:02:20 ERROR Disk write failure on /var/log/app
+2025-01-01 10:02:22 CRITICAL Filesystem read-only mode activated
+2025-01-01 10:02:25 INFO Switching logs to backup directory: /tmp/logs
+2025-01-01 10:02:30 DEBUG Testing write permissions in backup directory
+2025-01-01 10:02:32 SUCCESS Backup log directory active
+2025-01-01 10:02:40 INFO Loading user profile: user=sara
+2025-01-01 10:02:42 DEBUG Querying database for user profile
+2025-01-01 10:02:43 ERROR User profile not found: sara
+2025-01-01 10:02:45 WARNING Returning default profile for user=sara
+2025-01-01 10:02:50 INFO API request: POST /api/v1/login
+2025-01-01 10:02:52 FAIL Login failed for user: guest123
+2025-01-01 10:02:54 FAIL Login failed for user: guest123
+2025-01-01 10:02:56 FAIL Login failed for user: guest123
+2025-01-01 10:03:00 WARNING Multiple failed login attempts detected for guest123
+2025-01-01 10:03:05 INFO Throttling login attempts temporarily
+2025-01-01 10:03:10 INFO System performance stable
+2025-01-01 10:03:12 DEBUG Memory cleanup triggered
+2025-01-01 10:03:20 INFO Memory cleanup completed
+2025-01-01 10:03:25 DEBUG Checking network latency
+2025-01-01 10:03:27 WARNING High latency detected on route 10.0.0.1 → 10.0.0.5
+2025-01-01 10:03:30 ERROR Packet loss detected (15%)
+2025-01-01 10:03:35 INFO Switching to backup network route
+2025-01-01 10:03:40 SUCCESS Route switched successfully
+2025-01-01 10:03:45 INFO Worker process started: worker_01
+2025-01-01 10:03:50 DEBUG Worker_01 fetching task from queue
+2025-01-01 10:03:52 ERROR Task execution failed on worker_01
+2025-01-01 10:03:55 WARNING Retrying task on worker_01
+2025-01-01 10:04:00 SUCCESS Task completed on retry
+2025-01-01 10:04:10 INFO Security scan initiated
+2025-01-01 10:04:15 WARNING Suspicious activity detected: IP=192.168.1.55
+2025-01-01 10:04:18 ERROR Unauthorized access attempt detected
+2025-01-01 10:04:20 CRITICAL Security breach level 2 triggered
+2025-01-01 10:04:25 INFO Alert sent to admin team
+2025-01-01 10:04:30 DEBUG Logging security incident details
+2025-01-01 10:04:35 INFO Firewall rules updated
+2025-01-01 10:04:40 SUCCESS Security patch applied
+2025-01-01 10:04:50 INFO Restarting authentication service
+2025-01-01 10:04:52 DEBUG Reloading auth config
+2025-01-01 10:04:55 INFO Auth service running normally
